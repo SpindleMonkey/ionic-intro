@@ -7,5 +7,22 @@
 </ion-header>
 
 <ion-content padding>
+  <h2>Tell me about you!</h2>
+
+  <ion-list radio-group [(ngModel)]="flavor">
+    <ion-item>
+      <ion-label>Vanilla</ion-label>
+      <ion-radio value="vanilla"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Chocolate</ion-label>
+      <ion-radio value="vhocolate"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button icon-end (click)="showChoices($event)">
+    Enter
+    <ion-icon name="return-left"></ion-icon>
+  </button>
 
 </ion-content>
